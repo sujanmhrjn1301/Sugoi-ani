@@ -1,0 +1,196 @@
+.header {
+
+  background-color: rgb(32, 32, 32);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', Arial;
+  box-shadow: 0px 4px 6px rgba(249, 249, 249, 0.016);
+  z-index: 1000;
+
+}
+
+.left-section {
+  width: 260px;
+  margin-left: 10px;
+  margin-right: 45px;
+  display: flex;
+}
+
+.menu {
+  width: 25px;
+  filter: invert(100%);
+  margin-left: 1px;
+}
+
+.logo {
+  width: 250px;
+  filter: invert(100%);
+  margin-left: 15px;
+
+}
+
+.share-section {
+  width: 220px;
+  margin-right: 15px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reddit:hover, .telegram:hover, .twitter:hover, .instagram:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  filter: brightness(75%);
+  transition: filter 0.3s;
+}
+
+.reddit {
+  width: 40px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.telegram {
+  width: 35px;
+  margin-right: 5px;
+}
+
+.twitter {
+  width: 40px;
+  margin-right: 5px;
+}
+
+.instagram {
+  width: 40px;
+  margin-right: 5px;
+}
+
+
+.join {
+  margin-left: 5px;
+  line-height: 15px;
+  font-weight: 400;
+  color: lightgray;
+  margin-right: 10px;
+}
+.join:hover {
+  color: rgb(2, 107, 2);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+
+/* MID SECTION */
+/* START */
+.mid-section {
+  width: 300px;
+  margin-right: 10px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+figure {
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mid-section button {
+  background-color: transparent;
+  white-space: nowrap;
+  border: none;
+  font-family: Poppins, Arial;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+
+.live {
+  width: 30px;
+  filter: invert(10%) hue-rotate(110deg);
+}
+.live:hover, .random:hover, .manga:hover, .forum:hover{
+  cursor: pointer;
+
+}
+figure:hover {
+  transform: scale(1.1);
+}
+
+.live:hover {
+  filter: invert(0);
+  transition: filter 0.1s;
+}
+
+.random {
+  width: 28px;
+  filter: invert(100%) hue-rotate(110deg);
+}
+.random:hover {
+  filter: invert(0);
+  transition: filter 0.1s;
+}
+
+.manga {
+  width: 28px;
+  filter: invert(100%) hue-rotate(260deg);
+}
+
+.manga:hover {
+  filter: invert(0);
+  transition: filter 0.1s;
+}
+
+.forum {
+  width: 28px;
+  filter: invert(100%);
+}
+.forum:hover {
+  filter: invert(100%) hue-rotate(260deg);
+  transition: filter 0.1s;
+}
+
+
+.right-section {
+
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+}
+
+.search-bar {
+
+  width: 300px;
+  height: 40px;
+  border-radius: 3px;
+  border: none;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 5px;
+  
+
+}
+
+.search-icn {
+  width: 35px;
+  filter: invert(100%);
+
+}
+

@@ -1,0 +1,16 @@
+.ongoing-anime {
+  background-color: red;
+  width: 850px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+
+
+}
+.video-preview{
+  background-color: blue;
+  margin-right: 10px;
+  height: 350px;
+  width: 200px;
+}

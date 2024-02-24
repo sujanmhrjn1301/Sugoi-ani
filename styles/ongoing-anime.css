@@ -1,0 +1,111 @@
+.thumbnail {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  object-position: top;
+  transition: filter 0.2s;
+
+}
+
+
+.thumbnail:hover{
+  filter: blur(5px);
+  cursor: pointer;
+}
+
+
+.thumbnail-container {
+  position: relative;
+  display: flex;
+ 
+}
+
+.watch-button {
+  position: absolute;
+  top: 50%; /* Position the button at 50% from the top */
+  left: 50%; /* Position the button at 50% from the left */
+  transform: translate(-50%, -50%); /* Center the button horizontally and vertically */
+  opacity: 0;
+  border-radius: 50px;
+  width: 70px;
+  height: 70px;
+  font-family: Poppins, Arial;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  z-index: 2; /* Set a higher z-index to make it appear above the blurred container */
+}
+
+.watch-button a, .video-title a {
+  text-decoration: none;
+  color: rgb(233, 233, 233);
+}
+.thumbnail-container:hover .thumbnail  {
+  filter: blur(5px);
+  transition: filter  0.3s ease-in-out;
+}
+.thumbnail-container:hover .watch-button {
+  display: block;
+  opacity: 0.9;
+}
+.thumbnail-container:hover .watch-button:hover {
+  border-radius: 35;
+  background-color: rgba(199, 196, 196, 0.314);
+  transition: background-color 0.2s;
+  opacity: 1;
+}
+.video-preview {
+  width: 200px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+}
+.video-title:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.video-stat {
+  color: rgb(148, 148, 148);
+  font-weight: 400;
+}
+.video-title {
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: opacity 0.2s;
+
+
+}
+
+.ongoing-anime-heading {
+  font-size: 20px;
+  margin-top: 80px;
+  font-weight: 700;
+  width: 900px;
+  background-color: rgba(36,36,40,255);
+  color: rgba(255,222,149,255);
+  display: inline-block;
+  
+
+}
+
+.ongoing-anime {
+  display: inline-block;
+  width: 1100px;
+  background-color: rgba(36,36,40,255);
+  /*background-color: white;*/
+  color: white;
+
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+

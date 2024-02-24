@@ -1,0 +1,87 @@
+/* 
+
+.logo {
+  margin-left: 20px;
+  border-color: red;
+  border-style: solid;
+}
+
+
+.logo {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.search-box {
+  width: 250px;
+  height: 40px;
+  margin-right: 30px;
+  font-size: 15px;
+  padding-left: 15px;
+  border: none;
+  border-radius: 5px;
+
+}
+.live-icn {
+  width: 30px;
+  border-color: red;
+  border-style: solid;
+  
+}
+.live-icn:hover {
+  cursor: pointer;
+  filter: invert(50%);
+  transition: filter 0.1s;
+}
+
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(188, 187, 187);
+}
+.btn-container {
+  margin-right: 20px;
+  border-radius: 15px;
+  margin-right: 150px;
+  border-color: blue;
+  border-style: solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.watch-btn,.rnd-btn, .anime-btn {
+  height: 50px;
+  border: none;
+  margin-left: 15px;
+  background-color: transparent;
+
+}
+.watch-btn:hover,.rnd-btn:hover,.anime-btn:hover {
+  cursor: pointer;
+  color: rgb(234, 234, 234);
+  transition: background-color 0.2s, color 0.2s;
+}
+.watch-btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-color: red;
+  border-style: solid;
+} */
+

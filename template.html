@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watch Anime Online for Free in Sugoi Anime</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/ongoing-anime.css">
+  <link rel="stylesheet" href="styles/top-10.css">
+  <link rel="stylesheet" href="styles/popup.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+
+
+</head>
+
+<body>
+
+
+
+  <div class="header">
+    <div class="left-section">
+      <img class="menu" src="icons/menu.svg">
+      <img class="logo" src="icons/logo.svg">
+    </div>
+    <div class="share-section">
+      <p class="join">Join<br>Now</p>
+      <img class="reddit" src="icons/reddit.svg">
+      <img class="telegram" src="icons/telegram.svg">
+      <img class="twitter" src="icons/twitter.svg">
+      <img class="instagram" src="icons/instagram.svg">
+    </div>
+    <div class="mid-section">
+      <figure>
+        <img class="live" src="icons/header/live.svg">
+        <button class="live-btn">Live</button>
+      </figure>
+      <figure>
+        <img class="random" src="icons/header/random.svg">
+        <button>Random</button>
+      </figure>
+      <figure>
+        <img class="manga" src="icons/header/book.svg">
+        <button>Manga</button>
+      </figure>
+      <figure>
+        <img class="forum" src="icons/header/forum.svg">
+        <button>Forum</button>
+      </figure>
+    </div>
+    <div class="right-section">
+      <input class="search-bar" type="textbox" placeholder="Browse anime...">
+      <img class="search-icn" src="icons/search.svg">
+    </div>
+
+  </div>
+
+  <div class="ongoing-anime-heading">
+    <p>Ongoing Animes</p>
+  </div>
+  <div class="top-10-heading">
+
+  </div>
+
+  </div>
+    <div class="ongoing-anime">
+      {% for anime in top_anime %}
+      <div class="video-preview">
+
+        <div class="thumbnail-container">
+          <a href="{{anime.trailer}}" class="watch-button-link">
+            <button class="watch-button"><img src="icons/play-btn.png"></button>
+          </a>
+          
+          <div class="anime-pop-up-detail">
+            <p><b>{{anime.title_english}}</b></p>
+            <div class="anime-detail">
+              <p>{{anime.synopsis}}</p>
+            </div>
+            <div class="anime-bullet-info">
+              <p>Japanese: <b>{{anime.title_japanese}}</b></p>
+              <p>Synonyms: <b> {{', '.join(anime.synonyms) }}</b></p>
+              <p>Ratings: <b>{{anime.score}}</b></p>
+              <p>Status: <b>{{anime.status}}</b></p>
+              <p>Genres:<b> {{', '.join(anime.genres) }}</b></p>
+            </div>
+            <div class="popup-watch-btn-container">
+              <button class="popup-watch-now"><img class="popup-play-btn" src="icons/play.png"><a href="{{anime.trailer}}">Watch Now</a></button>
+              <button class="popup-favourite">+</button>
+            </div>
+          </div>
+          <a href="{{anime.trailer}}">
+            <img class="thumbnail" src="{{ anime.image_url }}">
+          </a>
+          
+        </div>
+        <div class="video-info">
+          <a href="{{anime.trailer}}">
+            <p class="video-title">{{ anime.title_english }}</p>
+          </a>
+          <p class="video-stat">{{anime.type}} &#183; {{anime.duration}}m</p>
+        </div>
+      </div>
+  {% endfor %}
+
+
+
+  <script>
+    console.log(anime); // Check the structure of the anime object
+ </script>
+</body>
+
+</html>
