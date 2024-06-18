@@ -6,4 +6,4 @@ Yet to be Completed. On Going Projet
 ![sugoi-ani-gif](https://github.com/sujanmhrjn1301/Sugoi-ani/assets/107530986/64eda8cb-0213-4f27-a4c8-d575ecfed8bf)
 
 # Website Link:
-https://sugoi-ani-git-main-sujanmhrjn1301s-projects.vercel.app/https://sugoi-ani-git-main-sujanmhrjn1301s-projects.vercel.app/
+https://sugoi-ani-git-main-sujanmhrjn1301s-projects.vercel.app
